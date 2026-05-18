@@ -11,7 +11,7 @@ const links = [
 export function Footer() {
   return (
     <footer className="bg-brand-black text-white border-t border-brand-blue/40">
-      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-10">
         <div>
           <img src={logo} alt="Sanmuk Integrated Services Ltd" className="h-14 w-auto bg-white p-2" />
           <p className="mt-6 text-white/60 text-sm">
@@ -58,7 +58,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-6 text-center text-xs uppercase tracking-widest text-white/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 text-center text-xs uppercase tracking-widest text-white/50">
           © 2025 Sanmuk Integrated Services Ltd · RC 6953913 · All Rights Reserved
         </div>
       </div>

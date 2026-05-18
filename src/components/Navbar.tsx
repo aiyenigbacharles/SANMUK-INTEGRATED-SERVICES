@@ -30,9 +30,9 @@ export function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <div className="mx-auto max-w-7xl px-6 h-20 flex items-center justify-between">
-          <a href="#top" className="flex items-center gap-3">
-            <img src={logo} alt="Sanmuk Integrated Services Ltd" className="h-12 w-auto" />
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 h-20 flex items-center justify-between">
+          <a href="#top" className="flex items-center gap-3 shrink-0">
+            <img src={logo} alt="Sanmuk Integrated Services Ltd" className="h-10 sm:h-12 w-auto" />
           </a>
 
           <nav className="hidden md:flex items-center gap-10">
@@ -54,7 +54,7 @@ export function Navbar() {
           </nav>
 
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-white p-1"
             onClick={() => setOpen(true)}
             aria-label="Open menu"
           >
@@ -70,15 +70,15 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-            className="fixed inset-0 z-[60] bg-brand-black flex flex-col"
+            className="fixed inset-0 z-[60] bg-brand-black flex flex-col overflow-hidden"
           >
-            <div className="flex items-center justify-between h-20 px-6 border-b border-brand-blue">
-              <img src={logo} alt="Sanmuk" className="h-12 w-auto" />
-              <button onClick={() => setOpen(false)} className="text-white" aria-label="Close menu">
+            <div className="flex items-center justify-between h-20 px-4 sm:px-6 border-b border-brand-blue shrink-0">
+              <img src={logo} alt="Sanmuk" className="h-10 sm:h-12 w-auto" />
+              <button onClick={() => setOpen(false)} className="text-white p-1" aria-label="Close menu">
                 <X className="h-7 w-7" />
               </button>
             </div>
-            <nav className="flex-1 flex flex-col items-center justify-center gap-10">
+            <nav className="flex-1 flex flex-col items-center justify-center gap-8 overflow-y-auto py-8">
               {links.map((l, i) => (
                 <motion.a
                   key={l.href}
@@ -87,7 +87,7 @@ export function Navbar() {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.1 + i * 0.08, ease: [0.25, 0.1, 0.25, 1] }}
-                  className="font-display text-5xl uppercase tracking-wider text-white hover:text-brand-blue-light"
+                  className="font-display text-4xl sm:text-5xl uppercase tracking-wider text-white hover:text-brand-blue-light"
                 >
                   {l.label}
                 </motion.a>
@@ -95,7 +95,7 @@ export function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
-                className="mt-4 bg-brand-blue text-white px-8 py-4 uppercase tracking-widest font-semibold"
+                className="mt-4 bg-brand-blue text-white px-8 py-4 uppercase tracking-widest font-semibold text-sm"
               >
                 Get In Touch
               </a>

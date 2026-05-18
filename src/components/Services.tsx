@@ -21,8 +21,8 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="bg-white py-28 md:py-36">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="services" className="bg-white py-28 md:py-36 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -39,7 +39,7 @@ export function Services() {
           <div className="mt-6 h-1 w-24 bg-brand-blue" />
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-px md:bg-border">
           {services.map(({ Icon, title, body }, i) => (
             <motion.div
               key={title}
@@ -47,13 +47,13 @@ export function Services() {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.7, ease: EASE, delay: i * 0.08 }}
-              className="group relative bg-white border-l-4 border-brand-blue p-8 md:p-10 shadow-[0_2px_20px_-10px_rgba(0,0,0,0.15)] hover:bg-brand-blue transition-colors duration-300"
+              className="group relative bg-white border-l-4 border-brand-blue p-6 md:p-10 shadow-[0_2px_20px_-10px_rgba(0,0,0,0.15)] hover:bg-brand-blue transition-colors duration-300"
             >
               <Icon className="h-10 w-10 text-brand-blue group-hover:text-white transition-colors" strokeWidth={1.5} />
-              <h3 className="mt-6 font-display text-2xl uppercase tracking-wide text-brand-black group-hover:text-white transition-colors">
+              <h3 className="mt-6 font-display text-xl md:text-2xl uppercase tracking-wide text-brand-black group-hover:text-white transition-colors">
                 {title}
               </h3>
-              <p className="mt-3 text-muted-foreground group-hover:text-white/90 transition-colors leading-relaxed">
+              <p className="mt-3 text-muted-foreground group-hover:text-white/90 transition-colors leading-relaxed text-sm md:text-base">
                 {body}
               </p>
             </motion.div>

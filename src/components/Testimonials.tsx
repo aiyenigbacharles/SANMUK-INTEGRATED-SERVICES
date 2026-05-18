@@ -22,8 +22,8 @@ const items = [
 
 export function Testimonials() {
   return (
-    <section className="bg-white py-28 md:py-36">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-white py-28 md:py-36 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -34,7 +34,7 @@ export function Testimonials() {
           <div className="text-xs uppercase tracking-[0.3em] text-brand-blue mb-4">
             Testimonials
           </div>
-          <h2 className="font-display text-5xl md:text-7xl text-brand-black uppercase">
+          <h2 className="font-display text-4xl md:text-7xl text-brand-black uppercase">
             What Our Clients Say
           </h2>
         </motion.div>
@@ -47,12 +47,12 @@ export function Testimonials() {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.7, ease: EASE, delay: i * 0.12 }}
-              className={`relative bg-[#F4F4F4] p-8 md:p-10 ${i === 1 ? "md:translate-y-6" : ""}`}
+              className={`relative bg-[#F4F4F4] p-7 md:p-10 ${i === 1 ? "md:translate-y-6" : ""}`}
             >
               <div className="font-display text-7xl text-brand-blue leading-none absolute top-4 left-6 select-none">
                 "
               </div>
-              <p className="relative pt-8 text-muted-foreground leading-relaxed">
+              <p className="relative pt-8 text-muted-foreground leading-relaxed text-sm md:text-base">
                 {t.quote}
               </p>
               <div className="mt-8 pt-6 border-t border-border">

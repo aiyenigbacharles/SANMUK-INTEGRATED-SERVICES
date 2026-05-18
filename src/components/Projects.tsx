@@ -26,7 +26,7 @@ export function Projects() {
 
   return (
     <section id="projects" className="bg-[#F4F4F4] py-28 md:py-36 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -51,8 +51,9 @@ export function Projects() {
       <motion.div ref={containerRef} className="overflow-hidden cursor-grab active:cursor-grabbing">
         <motion.div
           drag="x"
-          dragConstraints={{ left: -1000, right: 0 }}
-          className="flex gap-6 px-6 md:pl-[max(1.5rem,calc((100vw-80rem)/2+1.5rem))]"
+          dragConstraints={{ left: -800, right: 0 }}
+          dragElastic={0.1}
+          className="flex gap-4 sm:gap-6 px-4 sm:px-6 md:pl-[max(1.5rem,calc((100vw-80rem)/2+1.5rem))]"
         >
           {projects.map((p, i) => (
             <motion.div
@@ -61,7 +62,7 @@ export function Projects() {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, ease: EASE, delay: i * 0.1 }}
-              className="shrink-0 w-[320px] sm:w-[380px] bg-white border-b-2 border-brand-blue"
+              className="shrink-0 w-[280px] sm:w-[340px] md:w-[380px] bg-white border-b-2 border-brand-blue"
             >
               <div className={`aspect-video bg-gradient-to-br ${p.gradient} relative overflow-hidden`}>
                 <div className="absolute inset-0 blueprint-grid opacity-50" />
@@ -69,15 +70,15 @@ export function Projects() {
                   0{i + 1}
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="font-display text-2xl uppercase text-brand-black">{p.name}</h3>
-                <div className="mt-2 text-sm text-brand-blue uppercase tracking-widest">
+              <div className="p-5 sm:p-6">
+                <h3 className="font-display text-xl sm:text-2xl uppercase text-brand-black">{p.name}</h3>
+                <div className="mt-2 text-xs sm:text-sm text-brand-blue uppercase tracking-widest">
                   {p.location}
                 </div>
               </div>
             </motion.div>
           ))}
-          <div className="shrink-0 w-6" />
+          <div className="shrink-0 w-4 sm:w-6" />
         </motion.div>
       </motion.div>
     </section>

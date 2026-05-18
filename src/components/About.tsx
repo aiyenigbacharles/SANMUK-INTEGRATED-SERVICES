@@ -4,9 +4,9 @@ const EASE = [0.25, 0.1, 0.25, 1] as const;
 
 export function About() {
   return (
-    <section id="about" className="bg-[#1A1A1A] text-white py-28 md:py-36">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+    <section id="about" className="bg-[#1A1A1A] text-white py-28 md:py-36 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
           <motion.div
             initial={{ x: -60, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -16,7 +16,7 @@ export function About() {
             <div className="text-xs uppercase tracking-[0.3em] text-brand-blue-light mb-6">
               About Sanmuk
             </div>
-            <p className="font-display text-4xl md:text-5xl lg:text-6xl text-brand-blue leading-[1.05] uppercase">
+            <p className="font-display text-3xl md:text-5xl lg:text-6xl text-brand-blue leading-[1.05] uppercase">
               "Recognized for remarkable projects and a dedication to building lovely communities across Nigeria."
             </p>
             <div className="mt-10 text-sm uppercase tracking-[0.25em] text-white/40">
