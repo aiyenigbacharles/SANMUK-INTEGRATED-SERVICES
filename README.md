@@ -154,4 +154,4 @@ This project is currently unlicensed. Please check back for license information,
 
 **Last Updated:** May 18, 2026
 
-Made with ❤️ by [nerdymonk](https://github.com/aiyenigbacharles/SANMUK-INTEGRATED-SERVICES)
+Made with ❤️ by [Charles](https://github.com/aiyenigbacharles/SANMUK-INTEGRATED-SERVICES)
