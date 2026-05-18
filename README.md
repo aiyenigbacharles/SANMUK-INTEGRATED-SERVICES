@@ -1,4 +1,4 @@
-# 🏗️ Sanmuk Integrated Services
+# Sanmuk Integrated Services
 
 A TypeScript-based project for building and managing skyline structures. This repository contains tools and utilities for creating, visualizing, and managing complex building layouts and architectural designs.
 
@@ -31,7 +31,7 @@ The project is built with **TypeScript**, a programming language that adds extra
 
 ---
 
-## ✨ Features
+## Features
 
 - **Easy-to-Use API** - Simple functions to create and manage skyline data
 - **Type-Safe Code** - Built with TypeScript for better error detection
@@ -52,7 +52,7 @@ The project is built with **TypeScript**, a programming language that adds extra
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -92,7 +92,7 @@ The application should now be running. Open your browser and navigate to `http:/
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 skyline-builders/
@@ -116,7 +116,7 @@ skyline-builders/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Here's how you can help:
 
@@ -137,13 +137,13 @@ We welcome contributions! Here's how you can help:
 
 ---
 
-## 📄 License
+## License
 
 This project is currently unlicensed. Please check back for license information, or contact the repository owner.
 
 ---
 
-## 📊 Repository Stats
+## Repository Stats
 
 - **Language:** TypeScript
 - **Visibility:** Private
@@ -154,4 +154,4 @@ This project is currently unlicensed. Please check back for license information,
 
 **Last Updated:** May 18, 2026
 
-Made with ❤️ by [Charles](https://github.com/aiyenigbacharles/SANMUK-INTEGRATED-SERVICES)
+Made by [Charles](https://github.com/aiyenigbacharles/SANMUK-INTEGRATED-SERVICES)
